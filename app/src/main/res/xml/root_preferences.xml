@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_header_set_bg"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="set_bg"
+            app:title="@string/settings_title_set_bg"
+            app:summary="@string/settings_desc_set_bg"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_header_general"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            app:defaultValue="@string/default_value_bg_color"
+            app:key="bg_color"
+            app:title="@string/settings_title_bg_color"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+        <EditTextPreference
+            app:defaultValue="@string/default_value_eyes_color"
+            app:key="eyes_color"
+            app:title="@string/settings_title_eyes_color"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            app:key="use_bright_mode"
+            app:summary="@string/settings_desc_bright_mode"
+            app:title="@string/settings_title_bright_mode"
+            app:iconSpaceReserved="false"/>
+
+        <!--        <SwitchPreferenceCompat-->
+        <!--            app:dependency="sync"-->
+        <!--            app:key="attachment"-->
+        <!--            app:summaryOff="@string/attachment_summary_off"-->
+        <!--            app:summaryOn="@string/attachment_summary_on"-->
+        <!--            app:title="@string/attachment_title" />-->
+
+        <!--        <ListPreference-->
+        <!--            app:defaultValue="reply"-->
+        <!--            app:entries="@array/reply_entries"-->
+        <!--            app:entryValues="@array/reply_values"-->
+        <!--            app:key="reply"-->
+        <!--            app:title="@string/reply_title"-->
+        <!--            app:useSimpleSummaryProvider="true" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_header_text"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:key="use_bottom_text"
+            app:summary="@string/settings_desc_use_bottom_message"
+            app:title="@string/settings_title_use_bottom_message"
+            app:iconSpaceReserved="false"/>
+
+        <EditTextPreference
+            app:dependency="use_bottom_text"
+            app:key="bottom_text"
+            app:title="@string/settings_title_bottom_message"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+        <EditTextPreference
+            app:defaultValue="@string/default_value_text_color"
+            app:dependency="use_bottom_text"
+            app:key="bottom_text_color"
+            app:title="@string/settings_title_bottom_message_color"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+        <EditTextPreference
+            app:defaultValue="@string/default_value_text_size"
+            app:dependency="use_bottom_text"
+            app:key="bottom_text_size"
+            app:title="@string/settings_title_bottom_message_size"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

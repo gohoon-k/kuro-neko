@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">KuroNeko</string>
+
+    <string name="wallpaper_description">Creates kawaii Kuro Neko in home screen.</string>
+
+    <string name="settings_header_set_bg"><b>적용</b></string>
+    <string name="settings_title_set_bg">배경화면으로 설정하기!</string>
+    <string name="settings_desc_set_bg">클릭하시면 배경화면 설정 화면으로 이동합니다.</string>
+
+    <string name="settings_header_general"><b>일반</b></string>
+    <string name="settings_title_bg_color">배경 색</string>
+    <string name="settings_title_eyes_color">눈의 색</string>
+    <string name="settings_title_bright_mode">밝게하기</string>
+    <string name="settings_desc_bright_mode">화면 밝기가 어두울 때 유용합니다.</string>
+
+    <string name="settings_header_text"><b>텍스트</b></string>
+    <string name="settings_title_use_bottom_message">텍스트 표시</string>
+    <string name="settings_desc_use_bottom_message">화면에 텍스트를 표시합니다.\nHTML 문법으로 텍스트 컬러링이 가능합니다.</string>
+    <string name="settings_title_bottom_message">표시할 텍스트</string>
+    <string name="settings_title_bottom_message_color">텍스트 기본 색상</string>
+    <string name="settings_title_bottom_message_size">텍스트 크기</string>
+
+    <string name="default_value_bg_color">#232323</string>
+    <string name="default_value_eyes_color">#e4a600</string>
+
+    <string name="default_value_text_color">#FFFFFF</string>
+
+    <string name="default_value_text_size">40</string>
+
+    <string name="value_error">유효하지 않은 값이에요!!</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>
